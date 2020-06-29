@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <main class="main">
+    <div class="container">
+      <div class="calculadora">
+        <h2>Calculadora</h2>
+        <div id="visor">0</div>
+        <div class="teclado">
+          <div class="row">
+            <button type="button" onclick="limpar()" class="col2 limpar">AC</button>
+            <button type="button" onclick="trocaSinal()" class="col operacao">+/-</button>
+            <button type="button" onclick="setValue('/')" class="col operacao">/</button>
+          </div>
+          <div class="row">
+            <button type="button" onclick="setValue(7)" class="col numero">7</button>
+            <button type="button" onclick="setValue(8)" class="col numero">8</button>
+            <button type="button" onclick="setValue(9)" class="col numero">9</button>
+            <button type="button"onclick="setValue('*')" class="col operacao">x</button>
+          </div>
+          <div class="row">
+            <button type="button" onclick="setValue(4)" class="col numero">4</button>
+            <button type="button" onclick="setValue(5)" class="col numero">5</button>
+            <button type="button" onclick="setValue(6)" class="col numero">6</button>
+            <button type="button"onclick="setValue('-')" class="col operacao">-</button>
+          </div>
+          <div class="row">
+            <button type="button" onclick="setValue(1)" class="col numero">1</button>
+            <button type="button" onclick="setValue(2)" class="col numero">2</button>
+            <button type="button" onclick="setValue(3)" class="col numero">3</button>
+            <button type="button" onclick="setValue('+')" class="col operacao">+</button>
+          </div>
+          <div class="row">
+            <button type="button" onclick="setValue(0)" class="col2 numero">0</button>
+            <button type="button" onclick="decimal()" class="col numero">,</button>
+            <button type="button" id="igual"onclick="resultado()" class="col operacao">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

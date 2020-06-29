@@ -1,0 +1,89 @@
+body {
+    background: url('../img/bg.jpg');
+}
+
+.main .container {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 75%;
+    background-color: #fff;
+    border: 3px solid #ccc;
+    margin-top: 25%;
+    padding: 20px;
+}
+
+.main .container .calculadora {
+    border: 1px solid #52e8d4;
+    padding: 15px;
+}
+
+.main .container .calculadora h2 {
+    text-align: center;
+    color: #3fa799;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.main .container .calculadora #visor {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    min-height: 35px;
+    text-align: end;
+    font-size: 36px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: rgb(118, 118, 118);
+}
+
+.main .container .calculadora .teclado {
+    margin-top: 15px;
+    padding: 0 15px 0 15px;
+}
+
+.main .container .calculadora .teclado .row {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.main .container .calculadora .teclado .row button {
+    width: 25%;
+    height: 75px;
+    flex: 0 0 auto;
+    margin: 5px;
+    box-shadow: 5px 0 7px 0 #aaa;
+    border-radius: 30px;
+    font-size: 28px;
+
+}
+
+.main .container .calculadora .teclado .row button:hover{
+    filter: brightness(110%);
+}
+
+.main .container .calculadora .teclado .row button:focus{
+    outline: none;
+}
+
+.main .container .calculadora .teclado .row button.col2 {
+    width: 52%;
+}
+
+.main .container .calculadora .teclado .row button.limpar {
+    background-color: #f2565a;
+    color: #fff;
+}
+
+.main .container .calculadora .teclado .row button.operacao {
+    background-color: #ffca6a;
+}
+
+.main .container .calculadora .teclado .row button.numero {
+    background-color: #a6a6a6;
+    color: #fff;
+}
